@@ -1,0 +1,54 @@
+{
+    "env": {
+        "browser": true,
+        "commonjs": true,
+        "es6": true,
+        "node": true
+    },
+    "parserOptions": {
+        "ecmaFeatures": {
+            "jsx": true
+        },
+        "sourceType": "module"
+    },
+    "extends": "airbnb",
+    "parser": "babel-eslint",
+    "plugins": [
+      "import",
+      "react",
+      "flowtype",
+      "jsx-a11y"
+    ],
+    "rules": {
+      "indent": [
+        "error",
+        2
+      ],
+      "linebreak-style": [
+        "error",
+        "unix"
+      ],
+      "quotes": [
+        "error",
+        "single"
+      ],
+      "semi": [
+        "error",
+        "never"
+      ],
+      "arrow-parens": ["error", "always"],
+      "react/jsx-uses-react": "error",
+      "react/jsx-uses-vars": "error",
+      "react/jsx-filename-extension": "off",
+      "react/require-extension": "off",
+      //  需要时 error，忽略掉 ant-mobile
+      "import/extensions": "off",
+      "import/no-duplicates": "error",
+      "global-require": "off",
+      "generator-star-spacing": "off",
+      "no-duplicate-imports": "off",
+      "no-param-reassign": "off",
+      "no-mixed-operators": "off",
+      "no-new": "off"
+    }
+}
